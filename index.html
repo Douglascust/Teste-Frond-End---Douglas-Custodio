@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Front End</title>
+    <link rel="icon" href="img/logo_guia.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- link para as setas no Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+<body class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo" width="120" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="#">Program</a>
+                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Community</a>
+                    <button class="btn-custom" type="button">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-container animated-element">
+    <!-- Conteúdo Principal 1 -->
+    <section class="sub-container">
+        <div class="text-content">
+            <p class="subparagrafo1">BEST FITNESS IN THE TOWN</p>
+            <h1><span class="out">MAKE</span> YOUR <br> BODY SHAPE</h1>
+            <p class="descricao">
+                Unleash your potential and embark on a journey towards a stronger,
+                fitter, and more confident you. Sign up for "Make Your Body Shape" now
+                and witness the incredible transformation your body is capable of!
+            </p>
+            <button class="btn-custom">Get Started</button>
+        </div>
+        <div class="image-content">
+            <img src="img/header.png" alt="Fitness Model" width="320" height="500">
+        </div>
+    </section>
+
+    <section>
+        <div class="carousel-navigation">
+            <h3>EXPLORE OUR PROGRAM</h3>
+            <button class="carousel-btn left-btn">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="carousel-btn right-btn">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Cards -->
+        <div class="container">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <!-- Ícone antes do título -->
+                    <div class="icon-container">
+                        <!-- Ícone: Site icons8 em base 64 -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiklEQVR4nO2ZPWsVQRSGH4IkKlppIZaKIoI/IIqgTeo00cI+NtFeQRuNN9aSRv+BimBlqZgbEouoSSMomMYVFW1EGwVXBt4Ly7qzc/YjuxvcB5Zkds6Zc97ZOcPuXOjp6WmbF8AKHWcFeA6M5djEunw43yVgSIu8U5JTFYRMqf8tLXJVSTyoIOSh+q/QIgeAX8Bv4GAJIRb/xgjNaJ4QyxNtjNEad/VSVIilxiozDtwGPgIRMNC9rF3H7V5rnnGWtLNl8VK+YxXiB1lIzOboukVzLNQVP5LzJHBS/7t7TRHVFT+9tkPbaN3EZeMn1+RGDUIuA5+BT8BcAb8RvvgboZrJWpNWIclJ2AQWM8ZZVJ9VWOyJH6yZrDVpFeKbhPRYWcJ8sxt74gdrJpR4nhDrJOQJS89u6XyqCEn3PQOe5rQtsxt3QUgIn7BGheRdZbGMGfdC2LqlZfGPt0ONWPzjfmnxnxX7iD9q552gbIsa+ar2kWoa2hfyRO1L1TSwW+P8rJjPP+9L7pXhlMHxgtqRkinLGY3jPnstQpL5fcgacFCw2HYAr3TvETBRQsSEThhjfb9QcLOZJ4NxiXEzvG58lMcStfIamAF2YeMEsCxf93dnqt8Xf11PYt56GGFdk67YVxP9TpCFL7J3tbavQvwgkXVNags+J5vv2Pgm+/01xM9lYF2T4mjgoC7NG9kfrym+l2TNWNbkaQUbFvgmcfZna4pfGzNKzJ0FW7gv+/N0jLnEoYKFO55tt3VuKLHrRvtrsr9Jx7irxC4a7Wdlf4+O8ViJTRvtp2Xv/DrFauKIx8Kk7J1fp9hUYoeM9odl/56O8UOJ7TXa7/G8vrfOMOeXqTwf94tWT08PW8tfINkJIVvCV4oAAAAASUVORK5CYII=" alt="strength">
+                    </div>
+                    <h4>Strength</h4>
+                    <p>Embace the assence of strength as we delve into its varios dimensions physical, metal, and emotional.</p>
+                    <a class="join-now" href="#">
+                        <span>Join Now</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="icon-container">
+                        <!-- Ícone: Site icons8 em base 64 -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE8UlEQVR4nO2aa4xdUxTHfzN32mqj0qGmXh/EiNEhiI9K6TCmHq0o/SQp/cAXfJp6pYl6GyERryCj4hUkTTzaFG1KtCqUJiQUoZQhrbZUU9Whw1xZ8t+T1eOee885s3tbMv/k5t59zt5rn7X32mv91zoXRjCCEcTA8cCNwHJgHfALMABsBd4HHgTOBRpzyCwB5wMPA2ska0Cy12muG4C2GAp0AmuBcsbPN8CVesg0NAFXA9/lkPshcHYRBSYBbzhBW4AngIuAdmACME6r1QEsAL5w/W2FWyvInQx87PrZmFuAMzVnk2S3a66F2qnQfynQklWJk91q/Qx0A2MyjGsAZmlXyjKRMxK7+6vurVdfG1MLBwDzgG0a+y1wUhYldmjAKuBQ8uMg4CXJ2AVMkVn8oWsvAgcWkNsCvCMZO6op0yJtrePzwGiKw0xkkdvV7fr9XI3zUwtjtBAma0PaQi9Vh9XDVCJgFLDE2feiYSrhlXlXMk3+HujQjW06dHkwHdgMdKWYmbnnlXIOsXCYzqA981n+xhpdvL6A0Kc0tpf64ibN+164cJwu/ASMLSDwU+dy64lxOn8297FoF6zxZAFh5n3+dB4qxhnIg6c1t4WIocBnfj0vpiYicBQ6kQOXat7XEK8pK+rmRXdCkdnUFydq3k9wdtZcQNALGvuDvu+gvjjYxap/GGdZfj8vvnIK2Pdi6ovRmnc3Luo2F1iNQeA34ATHg+qJic7jDq3q5BqUw7jX2y7n6HRMoCSFBsVek7hQk10QWZF2PcOX1nhdjYurDLjcHehpujZf7fvV/kBt82RJBLJnCxETs/OYdEkaB0XMd+MY7mVq96p9TWJ8m3aqrO9jIipyt+T2ZOk8x3kme5CdwHjg+0TsuDaFqvToegict2aYsxP4WnOcV6XfR5LZldz6ap85Mo2y4znb3ZmZWoGq2NnaqOvzHf1uSLDYap++FCVatbC7PLWqpcgqPdRctUOm96YT3Oy8WKAqM9XvMym8wZ2zmzPm630pioSdfpYCGC/TCpPck7gfUmQjooZX1LZUFZmVtd8C+qW45etJnCPT6lOakMQEF8grOZdcRK0sruOx2FGVSQpUu12OE8whjLfiQhHc6SzlX5iiSfprxJRp7kGOTtwLEf524Dr9fjnRZ6WrzBxSsMbWr2dN3Y2F7sDamaiERp2NFTX8+uf6PaNCcDSzuKSAEqMUgE3uM7VC/iZ1vKvARG0a+7u+N1ZZkCJ4RHI3ZanwnCa7HnTBLisCVQmmZwErFq6QzL8UZzJhngb1O0qSFSH/H3Tea7jocHWx4AEz4yEN3JnTxQWqYrEpBrrcLj9aRECjDlQIgJXKPZUwXR4pBtOd4c7bYzmr/XugSUWJkLwYC64X5mrOsqwjS524KkzAvc7u74vsiZJoAh5wDqMnhhIeV7ltNvs/gviYqPgUXLjtyl7Bqe61wZY8bjADjF+FIsbWFA4WfdWWuxzjtoKFi4CxMqXAwYzCHEWdUBKfCsnSWuXPeXGKq6uZrAX7oFo5RDTXu+DZndFFNqpUG4Kc5Smns49h9d/HnWkYoTy8Sv8jlY8Er9SrPGe/gb1q/lEPtzkl156pslAgfrHLQ9FgjHSZizk9MqMGvTMPu7aixq7tFyjplXNwBK+6V3ADOhtRA9zeRqfLq0NZ01jsfxKteoe4OuUPBCP43+JvdZzNWvArUzsAAAAASUVORK5CYII=" alt="heart-with-pulse--v1">
+                    </div>
+                    <h4>Physical Fitness</h4>
+                    <p>It encompasses a range of activities that improve health, strength, flexibility, and averall well-being.</p>
+                    <a class="join-now" href="#">
+                        <span>Join Now</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="icon-container">
+                        <!-- Ícone: Site icons8 em base 64 -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEuklEQVR4nO2aa4iUVRjHf7uZJVuJaWIfbNkuKxV+0S5aREarlUWSYoWIRZSFRUGhH2MLiS7QBcpLxJZLqFmUy2TJil0MIqMsSi3aIjcpK0pd7eKazcQT/wMPL+8478y8884s+IfDsOc5t+ec5/4uHMMxNDSagdOBC4FZwD3AI0A3sBn4CvgDyANfAnPKXL8NWAnsBg7rd4X6q8ZoYCnwNfAPUCizrQNOS7DPVcDBImscAGZUw8S5wK+RRfcA24CcbutB4DZgJjARGKOXW+QOZmvMPco+bW7s68BkoEW/bzhmWitl5BUt8oFEaXiZ89skcuES1uqFo1jpmIjDetGXUyF6tcBHQJc2fEniYq0H2KS2BfgE2CrdCWgC7tKN2lo/6fU8dos2qcg5JoveXykjHcDvFehFuP2TIq/znmh54BlgmGiD6vfjPU4W/RBV4BSJ1UK1WyTv1q4Ts9am6ubmAwPaeDvQ7tYy3blfBzL6c+r/ocSLXCD6LjJGu5iwzffHiNIUMfMvcInTEVPsOPSIvow64DzgLx1gRwy9U7QvxHjQofV6gRb9Bibslc/wiptW+1abxWG+XsLG/SzRi+JE4BuNWSI/EZiJNmNiepiYy4CRUVLyMKanhDPs0Lg/Na5VJrZfBqBf4vT/S2SFDmdGzbndkXBeTnPMRNcVJiJPyaQGn3NOGfOf1rzXqCPaFRwWFId1Ot9QCsM1/ojmmyNNhN6U9eFKYK/ofTKpSXGpLJnfI7HXzqXIyEQpaFDoYh45zrk+K/8RLmCGxPKQwplM8bYL8sxbJ8H1zhgUgBeBEaKFMMisXmY4QUnPoEL2UrBE7FXHwN/6XezG7FTf9wo8N8vLd7tU4bK0GWnRpgdKvEaTTPA+N/5e4G79vcqNXZ5QxG9MW9n71G9ZXRwmAO+7+aaf40Wzm7W+TyNzxiusuUg+ydLkW4H7XF60Nm1lX6L+nU7OA6Y48dkTbtHB9CCvMeMUopv4na3oeRpwrebdKR8VLu5xaqAnwX88GWNaCyXC8lwFl/khcCo1wCQpvZnSyyO0Vdq8t4hJHQdskDMcUNbYJ0V/V7R1Cu8fBq4GjqOG6HTWxnxEgOXlv4hmiViq6K1CR4rpzPG6Ret7PrLfPPX/BoxNk5FcDRgxnC+vnI/JBN/S+NUMESzWgX+MKGSrKo+FagtsWaHZ+Y01RZjsizHVDYkzXbXwJtdvYf1n6jcL1FBolmMbIwZCe8wpuJnYgKky04Mqw2aOJtWytihCDQWFJC1aulmhfivSZR6uP3GUg+4Vc99FmsVQH8cUrUepohIVvZpjmOKhvDYeq8NUc5sLxchGMsQIhRCHUyzH3CBGtpExwreJIxKlYu1gCXoYE8RyadaMjJZfCPl5tc106tEyKi01M7e+PeRea57rn+0+E3RF5jQcFsgIWLs9kosEEVpT69C7WszRK+SVweFS2MBEd6MzMd19pPFVkCtccPhyozNxsbtxC0UCprn+1fVU5CRoc+XRLucUZ7pCwwtlFOvqhnd02Dfdjc9y1mlZPeKncnGWDjvgvpHfLI9f0NfZhmcCFczswJ8DI1X+Cd9CLKgcMhgZ823PvoU8wBDENUpVzX/YfzlYolQX/Adul2F2BlHlVgAAAABJRU5ErkJggg==" alt="exercise">
+                    </div>
+                    <h4>Fat Loss</h4>
+                    <p>Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.</p>
+                    <a class="join-now" href="#">
+                        <span>Join Now</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="icon-container">
+                        <!-- Ícone: Site icons8 em base 64 -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABN0lEQVR4nO2ZPU7DQBCFP4WGMqIFwQGQ4AYUpOEK/JyCn2vALaDhCqRIEA2nQKIF0UEDgyJtsSIQYu/G++zMJ73KO6uZeeuxbIPTPYaAJWqMAJZJxUlNxAvJzVI7YlGMF5Kbzh0ta/v4HWcoYoQw9qPTMp2viheihjuihjuihjuihjuihjuihjuihjuihpwjq8BDxnfzqroPOSRzVbAIC7pMLWIAfAIfwA7Nsw28A1/AQd1N+sBT6Mgp5TgLOTwDa3U2uIk+1fQoRw+4C7ncVg0+CYFvwCblWQdeQk7H8wZtAK8h6BAdjqLmbs1j47CujQ1wHR33lVkLL1JvrAXTjwbQ+X+jbjJu99FlL3ok7P624FHgwWcVNcl5Cmuppvjzgii2NIVYy7SQP09Na8QM1I+YiefndItv84XTqQ4V564AAAAASUVORK5CYII=" alt="industrial-scales">
+                    </div>
+                    <h4>Weight Gain</h4>
+                    <p>Designed for individuals, uor program offers an affective approach to goining weight in a sustainable.</p>
+                    <a class="join-now" href="#">
+                        <span>Join Now</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Conteúdo 2 -->
+
+    <section class="sub-container">
+        <div class="img-config">
+            <img  class="img1" src="img/class-1.jpg" alt="Fitness Model" width="420" height="240">
+            <img class="img2" src="img/class-2.jpg" alt="Fitness Model" width="240" height="150">
+        </div>
+        <div class="text-content">
+            <h3>THE CLASS YOU WILL GET HERE</h3>
+            <p class="descricao">
+                Led by our team of expert and motivational instructors, "The Class You
+                Will Get Here" is a high-energy, results-driven session that combines a
+                perfect blend of cardio, strength training, and functional exercises.
+                Each class is carefully curated to keep you engaged and challenged,
+                ensuring you never hit a plateau in your fitness endeavors. 
+            </p>
+            <button class="btn-custom">Book A Class</button>
+        </div>
+    </section>
+
+    <!-- Conteúdo 3 -->
+    <section>
+        <div class="text-content">
+            <h3 class="config">WHY JOIN US?</h3>
+            <p class="descricao config-p">
+                Our diverse membership base creates a friendly and supportive atmosphere, where you can
+                make friends and stay motivated.
+            </p>
+        </div>
+        <div class="img-container">
+            <img  class="img3" src="img/join.jpg" alt="Fitness Model" width="800" height="400">
+            <div class="card-container">
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <path d="M 24 4 C 18.494917 4 14 8.494921 14 14 C 14 19.505079 18.494917 24 24 24 C 29.505083 24 34 19.505079 34 14 C 34 8.494921 29.505083 4 24 4 z M 24 7 C 27.883764 7 31 10.116238 31 14 C 31 17.883762 27.883764 21 24 21 C 20.116236 21 17 17.883762 17 14 C 17 10.116238 20.116236 7 24 7 z M 11.978516 28 C 9.7987044 28 8 29.798705 8 31.978516 L 8 33.5 C 8 37.104167 10.27927 39.892227 13.306641 41.5625 C 16.334011 43.232773 20.168103 44 24 44 C 27.831897 44 31.665989 43.232773 34.693359 41.5625 C 37.274641 40.138345 39.217335 37.862616 39.761719 35 L 40.001953 35 L 40.001953 31.978516 C 40.001953 29.798705 38.201295 28 36.021484 28 L 11.978516 28 z M 11.978516 31 L 36.021484 31 C 36.579674 31 37.001953 31.420326 37.001953 31.978516 L 37.001953 32 L 37 32 L 37 33.5 C 37 35.895833 35.65427 37.607773 33.244141 38.9375 C 30.834011 40.267227 27.418103 41 24 41 C 20.581897 41 17.165989 40.267227 14.755859 38.9375 C 12.34573 37.607773 11 35.895833 11 33.5 L 11 31.978516 C 11 31.420326 11.420326 31 11.978516 31 z"></path>
+                </svg>
+                <div class="card-section">
+                    <h4>Personal Trainer</h4>
+                    <p>Get expert guidance to achieve your fitness goals.</p>
+                </div>
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <path d="M 20.742188 6 C 19.549202 6 18.403754 6.4731993 17.560547 7.3164062 L 15.025391 9.8535156 C 14.369434 10.509473 14 11.400012 14 12.328125 L 14 13 L 6.5 13 C 3.467 13 1 15.468 1 18.5 L 1 36.5 C 1 39.532 3.467 42 6.5 42 L 31.5 42 C 34.533 42 37 39.532 37 36.5 L 37 18.5 C 37 15.468 34.533 13 31.5 13 L 30 13 L 30 8.5 C 30 7.1364058 28.863594 6 27.5 6 L 20.742188 6 z M 32 8 L 32 11 L 36.5 11 C 37.329 11 38 10.328 38 9.5 C 38 8.672 37.329 8 36.5 8 L 32 8 z M 20.742188 9 L 27 9 L 27 13 L 17 13 L 17 12.328125 C 17 12.196238 17.05244 12.068652 17.146484 11.974609 L 19.683594 9.4394531 C 19.964387 9.1586602 20.343172 9 20.742188 9 z M 45.427734 17.001953 C 45.161359 17.014953 44.897969 17.098953 44.667969 17.251953 L 39 21.03125 L 39 33.970703 L 44.667969 37.748047 C 44.918969 37.914047 45.209 38 45.5 38 C 45.743 38 45.985031 37.941266 46.207031 37.822266 C 46.694031 37.562266 47 37.053 47 36.5 L 47 18.5 C 47 17.947 46.694031 17.437734 46.207031 17.177734 C 45.962531 17.046734 45.694109 16.988953 45.427734 17.001953 z M 9 20 L 17 20 C 17.552 20 18 20.448 18 21 L 18 26 C 18 26.552 17.552 27 17 27 L 9 27 C 8.448 27 8 26.552 8 26 L 8 21 C 8 20.448 8.448 20 9 20 z"></path>
+                </svg>
+                <div class="card-section">
+                    <h4>Practice Session</h4>
+                    <p>Participate in regular practice sessions to improve.</p>
+                </div>
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <path d="M32.901,45c-0.245,0-0.49-0.061-0.713-0.18L24,40.398l-8.188,4.422c-0.425,0.228-0.932,0.238-1.363,0.031	c-0.434-0.209-0.74-0.612-0.826-1.086l-1.648-9.159L3.41,30.961c-0.442-0.188-0.768-0.577-0.875-1.046	c-0.106-0.469,0.018-0.961,0.335-1.322l6.134-6.999l-2.489-8.968c-0.129-0.464-0.027-0.961,0.272-1.337s0.758-0.585,1.242-0.562	l9.297,0.431l5.459-7.537c0.564-0.779,1.865-0.779,2.43,0l5.459,7.537l9.297-0.431c0.473-0.021,0.942,0.187,1.242,0.562	s0.401,0.873,0.272,1.337l-2.489,8.968l6.134,6.999c0.317,0.361,0.441,0.854,0.335,1.322c-0.107,0.469-0.433,0.857-0.875,1.046	l-8.563,3.646l-1.648,9.159c-0.086,0.474-0.393,0.877-0.826,1.086C33.347,44.95,33.124,45,32.901,45z"></path>
+                    </svg>
+                <div class="card-section">
+                    <h4>Good Management</h4>
+                    <p>Enjoy a well-managed facility with all necessary amenities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Conteúdo 4 -->
+    <section>
+        <div class="text-content">
+            <h3 class="config">OUR PRICING PLAN</h3>
+            <p class="descricao config-p">
+                Our pricing plan comes with various membership tiers, each tailored to
+                cater to different preferences anf fitness aspirations.
+            </p>
+        </div>
+        <div class="pricing-cards">
+            <div class="cardd">
+                <h4>Basic Plan</h4>
+                <p class="price">$16</p>
+                <hr />
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        Smart workout plan
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        At home workouts
+                    </li>
+                </ul>
+                <button class="join-btn">Join Now</button>
+            </div>
+            <div class="cardd">
+                <h4>Weekly Plan</h4>
+                <p class="price">$25</p>
+                <hr />
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        PRO Gyms
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        Smart workout plan
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        At home workout
+                    </li>
+                </ul>
+                <button class="join-btn">Join Now</button>
+            </div>
+            <div class="cardd">
+                <h4>Monthly Plan</h4>
+                <p class="price">$49</p>
+                <hr />
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        ELITE Gyms & Classes
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        PRO Gyms
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        Smart workout plan
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        At home workouts
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.317 2 2 12.317 2 25 C 2 37.683 12.317 48 25 48 C 37.683 48 48 37.683 48 25 C 48 20.44 46.660281 16.189328 44.363281 12.611328 L 42.994141 14.228516 C 44.889141 17.382516 46 21.06 46 25 C 46 36.579 36.579 46 25 46 C 13.421 46 4 36.579 4 25 C 4 13.421 13.421 4 25 4 C 30.443 4 35.393906 6.0997656 39.128906 9.5097656 L 40.4375 7.9648438 C 36.3525 4.2598437 30.935 2 25 2 z M 43.236328 7.7539062 L 23.914062 30.554688 L 15.78125 22.96875 L 14.417969 24.431641 L 24.083984 33.447266 L 44.763672 9.046875 L 43.236328 7.7539062 z"></path>
+                        </svg>
+                        Personal Training
+                    </li>
+                </ul>
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo 5 -->
+    <section class="sub-container">
+        <div>
+            <svg class="aspas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <path d="M 13.5 10 A 8.5 8.5 0 0 0 13.5 27 A 8.5 8.5 0 0 0 18.291016 25.519531 C 17.422273 29.222843 15.877848 31.803343 14.357422 33.589844 C 12.068414 36.279429 9.9433594 37.107422 9.9433594 37.107422 A 1.50015 1.50015 0 1 0 11.056641 39.892578 C 11.056641 39.892578 13.931586 38.720571 16.642578 35.535156 C 19.35357 32.349741 22 27.072581 22 19 A 1.50015 1.50015 0 0 0 21.984375 18.78125 A 8.5 8.5 0 0 0 13.5 10 z M 34.5 10 A 8.5 8.5 0 0 0 34.5 27 A 8.5 8.5 0 0 0 39.291016 25.519531 C 38.422273 29.222843 36.877848 31.803343 35.357422 33.589844 C 33.068414 36.279429 30.943359 37.107422 30.943359 37.107422 A 1.50015 1.50015 0 1 0 32.056641 39.892578 C 32.056641 39.892578 34.931586 38.720571 37.642578 35.535156 C 40.35357 32.349741 43 27.072581 43 19 A 1.50015 1.50015 0 0 0 42.984375 18.78125 A 8.5 8.5 0 0 0 34.5 10 z"></path>
+            </svg>
+        </div>
+        <div class="text-content">
+            <h3>MEMBER REVIEW</h3>
+            <p class="feed">
+                What truly sets this gym apart is their expert team of trainers. The trainers are knowledgeable,
+                approachable, and genuinely invested in helping members achieve their fitness goals. They take
+                the time to understand individual needs and create personalized workout plans, ensuring maximum
+                results and safety. 
+            </p>
+            <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <path d="M 24.009766 5 A 1.50015 1.50015 0 0 0 22.658203 5.8300781 L 17.505859 16.134766 L 5.2714844 18.017578 A 1.50015 1.50015 0 0 0 4.4394531 20.560547 L 12.902344 29.023438 L 11.017578 41.271484 A 1.50015 1.50015 0 0 0 13.193359 42.830078 L 24 37.191406 L 34.806641 42.830078 A 1.50015 1.50015 0 0 0 36.982422 41.271484 L 35.097656 29.023438 L 43.560547 20.560547 A 1.50015 1.50015 0 0 0 42.728516 18.017578 L 30.494141 16.134766 L 25.341797 5.8300781 A 1.50015 1.50015 0 0 0 24.009766 5 z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <path d="M 24.009766 5 A 1.50015 1.50015 0 0 0 22.658203 5.8300781 L 17.505859 16.134766 L 5.2714844 18.017578 A 1.50015 1.50015 0 0 0 4.4394531 20.560547 L 12.902344 29.023438 L 11.017578 41.271484 A 1.50015 1.50015 0 0 0 13.193359 42.830078 L 24 37.191406 L 34.806641 42.830078 A 1.50015 1.50015 0 0 0 36.982422 41.271484 L 35.097656 29.023438 L 43.560547 20.560547 A 1.50015 1.50015 0 0 0 42.728516 18.017578 L 30.494141 16.134766 L 25.341797 5.8300781 A 1.50015 1.50015 0 0 0 24.009766 5 z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <path d="M 24.009766 5 A 1.50015 1.50015 0 0 0 22.658203 5.8300781 L 17.505859 16.134766 L 5.2714844 18.017578 A 1.50015 1.50015 0 0 0 4.4394531 20.560547 L 12.902344 29.023438 L 11.017578 41.271484 A 1.50015 1.50015 0 0 0 13.193359 42.830078 L 24 37.191406 L 34.806641 42.830078 A 1.50015 1.50015 0 0 0 36.982422 41.271484 L 35.097656 29.023438 L 43.560547 20.560547 A 1.50015 1.50015 0 0 0 42.728516 18.017578 L 30.494141 16.134766 L 25.341797 5.8300781 A 1.50015 1.50015 0 0 0 24.009766 5 z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <path d="M 24.009766 5 A 1.50015 1.50015 0 0 0 22.658203 5.8300781 L 17.505859 16.134766 L 5.2714844 18.017578 A 1.50015 1.50015 0 0 0 4.4394531 20.560547 L 12.902344 29.023438 L 11.017578 41.271484 A 1.50015 1.50015 0 0 0 13.193359 42.830078 L 24 37.191406 L 34.806641 42.830078 A 1.50015 1.50015 0 0 0 36.982422 41.271484 L 35.097656 29.023438 L 43.560547 20.560547 A 1.50015 1.50015 0 0 0 42.728516 18.017578 L 30.494141 16.134766 L 25.341797 5.8300781 A 1.50015 1.50015 0 0 0 24.009766 5 z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                    <defs>
+                      <linearGradient id="halfFillGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="50%" stop-color="#f9ac54" /> 
+                        <stop offset="50%" stop-color="#111317" /> 
+                      </linearGradient>
+                    </defs>
+                    <path d="M 24.009766 5 A 1.50015 1.50015 0 0 0 22.658203 5.8300781 L 17.505859 16.134766 L 5.2714844 18.017578 A 1.50015 1.50015 0 0 0 4.4394531 20.560547 L 12.902344 29.023438 L 11.017578 41.271484 A 1.50015 1.50015 0 0 0 13.193359 42.830078 L 24 37.191406 L 34.806641 42.830078 A 1.50015 1.50015 0 0 0 36.982422 41.271484 L 35.097656 29.023438 L 43.560547 20.560547 A 1.50015 1.50015 0 0 0 42.728516 18.017578 L 30.494141 16.134766 L 25.341797 5.8300781 A 1.50015 1.50015 0 0 0 24.009766 5 z" fill="url(#halfFillGradient)" />
+                </svg>
+            </div>
+            <!-- <button class="btn-custom">Book A Class</button> -->
+            <div class="profissao_member">
+                <img  class="img4" src="img/member.jpg" alt="Fitness Model" width="100" height="100">
+                <div>
+                    <h4>Jane Cooper</h4>
+                    <p>Software Developer</p>
+                </div>
+                <div class="button-container">
+                    <!-- Botão de seta para a esquerda -->
+                    <button class="btn btn-arrow btn_left">
+                      <i class="bi bi-arrow-left"></i>
+                    </button>
+                
+                    <!-- Botão de seta para a direita -->
+                    <button class="btn btn-arrow btn_right">
+                      <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <hr class="linha">
+    <footer>
+        <div>
+            <img src="img/logo.png" alt="Logo" width="120" height="30" class="d-inline-block align-text-top">
+        </div>
+        <div class="sub-container">
+            <p class="descricao-footer">
+                Take the first step towards a healthier, stronger
+                you with our unbeatable pricing plans. Let's sweat,
+                achieve, and conquer together!
+            </p>
+            <div class="conf-footer all1">
+                <p>Company</p>
+                <ul>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Franchise</a></li>
+                    <li><a href="#">Partnership</a></li>
+                    <li><a href="#">Network</a></li>
+                </ul>                    
+            </div>
+            <div class="conf-footer  all2">
+                <p>About</p>
+                <ul>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Segurity</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>                    
+            </div>
+            <div class="conf-footer u-l all3">
+                <p>Contact</p>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Teams & Conditions</a></li>
+                    <li><a href="#">BMI Calculator</a></li>
+                </ul>                    
+            </div>
+        </div>
+        <div class="redes">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50">
+                <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50">
+                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                <path d="M21.634,4.031c-0.815,0.385-2.202,1.107-2.899,1.245c-0.027,0.007-0.049,0.016-0.075,0.023 c-0.813-0.802-1.927-1.299-3.16-1.299c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.218,0-5.568-1.679-7.327-3.837 C3.438,4.873,3.188,5.024,3.136,5.23C3.019,5.696,2.979,6.475,2.979,7.031c0,1.401,1.095,2.777,2.8,3.63 c-0.314,0.081-0.66,0.139-1.02,0.139c-0.424,0-0.912-0.111-1.339-0.335c-0.158-0.083-0.499-0.06-0.398,0.344 c0.405,1.619,2.253,2.756,3.904,3.087c-0.375,0.221-1.175,0.176-1.543,0.176c-0.136,0-0.609-0.032-0.915-0.07 c-0.279-0.034-0.708,0.038-0.349,0.582c0.771,1.167,2.515,1.9,4.016,1.928c-1.382,1.084-3.642,1.48-5.807,1.48 c-0.438-0.01-0.416,0.489-0.063,0.674C3.862,19.504,6.478,20,8.347,20C15.777,20,20,14.337,20,8.999 c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.589-0.425,1.491-1.163,1.947-1.728c0.155-0.192,0.03-0.425-0.181-0.352 c-0.543,0.189-1.482,0.555-2.07,0.625c1.177-0.779,1.759-1.457,2.259-2.21C22.109,4.168,21.895,3.907,21.634,4.031z"></path>
+            </svg>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
